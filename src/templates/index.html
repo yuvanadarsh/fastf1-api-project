@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <title>F1 Archive</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/"
+        ><div class="logo">
+          <img src="/static/assets/F1_logo.png" alt="" />
+          <p>F1 Archive</p>
+        </div></a
+      >
+      <a class="git-btn" href="#Insert Github Link" target="_blank">
+        <button>
+          <div id="git-btn" class="btn">
+            <img src="/static/assets/github_logo.png" alt="" />Github
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="body">
+      <p class="title">
+        Welcome to the <br />
+        F1 Archive!
+      </p>
+      <p class="subtitle">
+        Get information <br />
+        about your favourite <br />
+        races at the click of a <br />button!
+      </p>
+      <a href="/search-by-year"
+        ><button id="get-started" class="get-started">Get Started</button></a
+      >
+    </div>
+  </body>
+</html>

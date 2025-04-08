@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/display.css') }}"
+    />
+    <script
+      src="{{ url_for('static', filename='js/script.js') }}"
+      defer
+    ></script>
+
+    <title>Search By Race</title>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="/"
+        ><div class="logo">
+          <img src="/static/assets/F1_logo.png" alt="" />
+          <p>F1 Archive</p>
+        </div></a
+      >
+      <a class="git-btn" href="#Insert Github Link" target="_blank">
+        <button>
+          <div id="git-btn" class="btn">
+            <img src="/static/assets/github_logo.png" alt="" />Github
+          </div>
+        </button>
+      </a>
+    </div>
+    <div class="body" style="margin-top: 00px; gap: 10px">
+      <p class="title" style="font-size: 50px">Search by Race</p>
+      <p class="subtitle" style="font-size: 20px">
+        Search info based on Year, Circuit, and Session
+      </p>
+    </div>
+    <div class="input">
+      <form id="myForm" action="">
+        <select name="year-dropdown" id="year-dropdown" class="year-dropdown">
+          <option value="" disabled selected>Select a year</option>
+        </select>
+      </form>
+    </div>
+    <div id="output" class="output"></div>
+  </body>
+</html>
