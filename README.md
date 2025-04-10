@@ -50,7 +50,7 @@ Note: local server should open on port 5000
 
 Example:
 
-- Example will be inserted in future updates
+<img alt="Example Image" src="https://github.com/yuvanadarsh/fastf1-api-project/blob/main/src/static/assets/example.png">
 
 ## Bugs/Known Issues
 
