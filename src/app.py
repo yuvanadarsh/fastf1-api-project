@@ -1,4 +1,5 @@
 from flask import Flask, jsonify, render_template, request
+from waitress import serve
 import fastf1
 import os
 import json
@@ -74,5 +75,6 @@ def get_data(year, gp, session_type):
     with open(f'{cache_dir}/race_results.json', 'r') as f:
         data = json.load(f)
     return jsonify(data)
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    serve(app, host="0.0.0.0", port=8080)
